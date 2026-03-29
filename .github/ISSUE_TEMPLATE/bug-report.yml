@@ -1,0 +1,46 @@
+name: Bug Reports
+description: For reporting known and reproducible issues with the userscript.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Bug reports should only be used for reporting issues with how the userscript works.
+  - type: input
+    attributes:
+      label: Drug Name
+      description: The name of the drug related to this issue.
+      placeholder: Atorvastatin
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Current Behavior
+      description: Please provide a clear & concise description of the issue.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Expected Behavior
+      description: Please describe what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Steps to Reproduce
+      description: Please be as detailed as possible when providing steps to reproduce, failure to provide steps will result in this issue being closed.
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Walgreens Rx Sense Drug Link
+      description: Link to the drug on Walgreens Rx Sense.
+      placeholder: https://walgreens.rxsense.com/drug/atorvastatin-calcium
+    validations:
+      required: false
+  - type: input
+    attributes:
+      label: GoodRx Drug Link
+      description: Link to the drug on GoodRx.
+      placeholder: https://www.goodrx.com/atorvastatin
+    validations:
+      required: false
